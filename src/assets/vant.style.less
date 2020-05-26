@@ -1,0 +1,46 @@
+/* nav-bar */
+.van-nav-bar {
+  /*0.53rem 约等于 46px*/
+  /*height: 0.53rem;*/
+  /*line-height: 0.53rem;*/
+  background-color: #3770fb;
+  z-index: 100;
+
+  .van-icon {
+    color: #fff;
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__text {
+    color: #fff;
+
+    &:active {
+      background-color: unset;
+    }
+  }
+}
+
+
+
+/* tabs */
+.van-tabs {
+  &__nav {
+
+    &--card {
+      border: 1px solid #3770fb;
+
+      .van-tab {
+        color: #3770fb;
+        border-right: none;
+
+        &.van-tab--active {
+          background-color: #3770fb;
+          color: white;
+        }
+      }
+    }
+  }
+}

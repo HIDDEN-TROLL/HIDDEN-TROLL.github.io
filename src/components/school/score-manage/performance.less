@@ -1,0 +1,848 @@
+// 学生档案成绩首页
+#performance_yi {
+    font-size: 0.14rem;
+    line-height: 0.14rem;
+    padding-bottom:0.4rem;
+    .unitInput {
+        margin-top: 0.1rem;
+    }
+
+    .p_header {
+        z-index: 999 !important;
+        background-color: #3770fb;
+        font-size: 0.16rem;
+        height: 0.46rem;
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        line-height: 0.45rem;
+        padding: 0 0.16rem;
+
+        .icon_y {
+            font-size: 0.2rem;
+            font-style: normal;
+        }
+
+        .two_yi {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            -webkit-transform: translate(-73%);
+
+        }
+
+        .three_yi {
+            position: absolute;
+            right: 0.48rem;
+            font-size: 0.12rem;
+
+            span {
+                display: inline-block;
+                line-height: 0.12rem;
+                text-align: center;
+                padding-top: 0.03rem;
+                img {
+                    width: 0.24rem;
+                    height: 0.24rem;
+                }
+            }
+        }
+    }
+
+    .slect_yi {
+        height: 0.44rem;
+
+        .van-popup {
+            height: auto;
+        }
+
+        // background-color: yellowgreen;
+        .chooseSelect {
+            text-align: center;
+            height: 0.48rem;
+            font-size: 0.14rem;
+            line-height: 0.48rem;
+            color: #666;
+            border-bottom: 10px solid #f3f7f8;
+
+            .select-text {
+                float: left;
+                width: 70%;
+                text-align: center;
+                white-space: nowrap;
+                overflow: auto;
+            }
+
+            .add {
+                width: 0.22rem;
+                height: 0.22rem;
+                display: inline-block;
+                padding: 0.04rem 0;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            // .group-select {
+            //   display: flex;
+            //   padding: 0 0.14rem;
+            //   justify-content: space-between;
+            //   .item {
+            //     position: relative;
+            //     display: inline-block;
+            //     padding: 0.12rem 0 0.13rem 0;
+            //     span {
+            //       &:before {
+            //         content: "";
+            //         position: absolute;
+            //         top: 17px;
+            //         right: -18px;
+            //         border-left: 8px solid transparent;
+            //         border-right: 8px solid transparent;
+            //         border-top: 10px solid #666666;
+            //       }
+            //       &:after {
+            //         content: "";
+            //         position: absolute;
+            //         top: 17px;
+            //         right: -16px;
+            //         border-left: 6px solid transparent;
+            //         border-right: 6px solid transparent;
+            //         border-top: 7px solid white;
+            //       }
+            //     }
+            //   }
+            //   .add {
+            //     width: 0.22rem;
+            //     height: 0.22rem;
+            //     display: inline-block;
+            //     padding: 0.12rem 0.08rem 0.13rem 0;
+            //     img {
+            //       width: 100%;
+            //       height: 100%;
+            //     }
+            //   }
+            // }
+        }
+    }
+
+    .blank_yi {
+        height: 0.1rem;
+        background-color: #F3F7F8
+    }
+
+    .content_yi {
+        padding: 0 0.16rem;
+
+        .tody_yi {
+            .p_flex {
+                margin-top: 0.23rem;
+                display: flex;
+                justify-content: space-between;
+                color: #333333;
+                padding-left: 0.08rem;
+                border-left: 0.02rem solid #3770fb;
+                line-height: 0.2rem;
+                height: 0.2rem;
+
+                .yincang {
+                    top: -6px;
+                    position: relative;
+                    padding-left: 5px;
+                }
+            }
+
+            .name_yi {
+                margin-top: 0.06rem;
+                margin-bottom: 0.25rem;
+
+                ul {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+
+                    li {
+                        width: 0.8rem;
+                        line-height: 0.24rem;
+                        font-size: 0.12rem;
+                        background-color: #3770fb;
+                        color: #fff;
+                        text-align: center;
+                        margin-top: 0.08rem;
+                        // margin-right: 0.057rem;
+                        border-radius: 0.04rem;
+                    }
+                }
+            }
+
+            .sy_name_yi {
+                ul {
+                    li {
+                        border: 0.01rem solid #3770fb;
+                        color: #3770fb;
+                        background-color: #fff;
+                    }
+                }
+            }
+
+            .color_6 {
+                color: #666;
+                margin-bottom: 0.13rem;
+            }
+        }
+    }
+
+    .bott_yi {
+        .van-button--large {
+            height: 0.4rem;
+            line-height: 0.4rem;
+            background-color: #3770fb;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+        }
+    }
+
+    .van-popup {
+        width: 100%;
+        height: 100%;
+    }
+
+    // 修改分数
+    #resultsPop-up {
+        width: 100%;
+        height: 100%;
+        font-size: 0.14rem;
+
+        .content {
+            .top-nav {
+                height: 0.46rem;
+                line-height: 0.45rem;
+                background-color: #3770FB;
+                padding: 0 0.16rem;
+                font-size: 0.16rem;
+                color: #FFF;
+
+                .van-icon {
+                    font-size: 0.18rem;
+                    top: 0.03rem;
+                }
+            }
+
+            .header {
+                padding: 0 0.16rem;
+                height: 0.46rem;
+                line-height: 0.46rem;
+
+                // border-bottom: 1px solid #eee;
+                .bod-s {
+                    border-bottom: 1px solid #eee;
+                    height: 0.46rem;
+
+                    .xiaodian {
+                        .van-switch {
+                            margin-top: 0.13rem;
+                        }
+
+                        span {
+                            margin-left: 0.08rem;
+
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+
+            .middle {
+                padding: 0 0.16rem;
+
+                .p_flex {
+                    margin-top: 0.16rem;
+                    display: flex;
+                    justify-content: space-between;
+                    color: #333333;
+                    padding-left: 0.08rem;
+                    border-left: 0.02rem solid #3770fb;
+                    line-height: 0.2rem;
+                    height: 0.2rem;
+                }
+
+                ul {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    padding-bottom: 0.18rem;
+
+                    li {
+                        width: 0.5rem;
+                        height: 0.26rem;
+                        font-size: 0.14rem;
+                        background-color: #fff;
+                        border: 0.01rem solid #666666;
+                        color: #666;
+                        text-align: center;
+                        margin-top: 0.09rem;
+                        // margin-right: 0.08rem;
+                        line-height: 0.26rem;
+                        border-radius: 0.02rem;
+                    }
+                }
+
+            }
+
+            .huis {
+                height: 0.1rem;
+                background-color: #F3F7F8;
+                width: 100%;
+            }
+
+            .ftooer {
+                padding: 0 0.16rem;
+
+                .p_flex {
+                    margin-top: 0.16rem;
+                    display: flex;
+                    justify-content: space-between;
+                    color: #333333;
+                    padding-left: 0.08rem;
+                    border-left: 0.02rem solid #3770fb;
+                    line-height: 0.2rem;
+                    height: 0.2rem;
+                }
+
+                ul {
+                    display: flex;
+                    flex-flow: row wrap;
+                    padding-bottom: 0.18rem;
+                    margin-top: 0.08rem;
+                    justify-content: space-between;
+
+                    li {
+                        width: 0.5rem;
+                        height: 0.26rem;
+                        font-size: 0.14rem;
+                        background-color: #fff;
+                        border: 0.01rem solid #999;
+                        color: #999;
+                        text-align: center;
+                        margin-top: 0.09rem;
+                        // margin-right: 0.08rem;
+                        line-height: 0.26rem;
+                        border-radius: 0.02rem;
+                    }
+
+                }
+
+                .van-row {
+                    height: 0.34rem;
+                    margin-top: 0.11rem;
+
+                    .one_col {
+                        line-height: 0.34rem;
+                        height: 0.34rem;
+                        text-align: center;
+                        border: 0.01rem solid #3770fb;
+                        border-radius: 0.03rem 0 0 0.03rem;
+
+                    }
+
+                    .two_col {
+                        border: 0.01rem solid #3770fb;
+                        // border-left: 0;
+                        // border-right: 0;
+                        border-radius: 0 0.03rem 0.03rem 0;
+                        line-height: 0.34rem;
+                        height: 0.34rem;
+                        text-align: center;
+                    }
+
+                    // .thre_col {
+                    //     border-radius: 0 0.03rem 0.03rem 0;
+                    //     border: 0.01rem solid #3770fb;
+                    //     line-height: 0.34rem;
+                    //     height: 0.34rem;
+                    //     text-align: center;
+                    // }
+
+                }
+
+            }
+        }
+    }
+
+}
+
+
+// .name_yi ul li p:first-child {
+//     margin-top: 0.08rem;
+// }
+
+.name_yi ul li p:last-child {
+    margin-top: 0.04rem;
+
+}
+
+.fenshu--active {
+    background-color: #3770FB !important;
+    color: #fff !important;
+    border: 0.01rem solid #3770FB !important;
+}
+
+.col-active {
+    background-color: #3770FB;
+    color: #fff;
+}
+
+.col-m {
+    background-color: #fff;
+    color: #3770FB
+}
+
+// .middle ul li:nth-child(5n),
+// .ftooer ul li:nth-child(5n) {
+//     position: absolute;
+//     right: 0.16rem !important;
+//     margin-right: 0 !important;
+// }
+
+// .middle ul li:nth-child(4n),
+// .ftooer ul li:nth-child(4n) {
+//     margin-right: 0.07rem !important;
+// }
+
+// 成绩档案
+.score-archives {
+    font-size: 0.14rem;
+    /*padding-bottom:0.4rem;*/
+    .chooseClass {
+        height: 0.44rem;
+        padding: 0 0.16rem;
+        margin-top: 0.45rem;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .chooseSubject {
+        padding: 0.16rem 0.16rem;
+        overflow: hidden;
+        li {
+            float: left;
+            padding: 0.035rem 0.21rem;
+            margin-right: 0.2rem;
+            background-color: #d6d6d6;
+            border-radius: 3px;
+            color: white;
+        }
+
+        .active {
+            background-color: #3770fb;
+        }
+    }
+
+    .barCharts {
+        height: 2rem;
+    }
+
+    .score-table {
+        padding: 0.31rem 0.21rem 0.7rem;
+
+        .table-thead {
+            font-weight: bold;
+        }
+      .tabs-score-touch{
+          position: relative;
+        height:2rem;
+        overflow: hidden;
+          .touch-content{
+              width: 100%;
+              position: absolute;
+              top: 0;
+              background-color: #fff;
+              transition: all 1s;
+          }
+      }
+        .table-thead,
+        .table-body {
+            padding: 0.1rem;
+            border-bottom: 1px solid #eeeeee;
+
+            span {
+                display: inline-block;
+                text-align: center;
+            }
+        }
+    }
+
+    .chakan {
+        display: block;
+        padding-bottom: 0.6rem;
+        text-align: center;
+        font-size: 0.16rem;
+    }
+
+    .bott_yi {
+        .van-button--large {
+            height: 0.4rem;
+            line-height: 0.4rem;
+            background-color: #3770fb;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+        }
+    }
+}
+
+// 修改成绩
+.resiveScore {
+    font-size: 0.14rem;
+    padding-bottom: 0.4rem;
+    .chooseClass {
+        height: 0.44rem;
+        padding: 0 0.16rem;
+        margin-top: 0.45rem;
+        border-bottom: 0.01rem solid #eeeeee;
+    }
+
+    .student-wrapper {
+        padding: 0.17rem 0.16rem 0.13rem 0.16rem;
+
+        .all-student {
+            max-height: 1.33rem;
+            overflow-y: auto;
+          overflow-x: hidden;
+            span {
+                display: inline-block;
+                width: 100%;
+                height: 0.3rem;
+                text-align: center;
+                line-height: 0.3rem;
+                color: white;
+                background-color: #d6d6d6;
+                border-radius: 0.03rem;
+               /* margin-right: 0.08rem;*/
+                margin-bottom: 0.09rem;
+
+                &:nth-child(4n) {
+                    margin-right: 0;
+                }
+            }
+
+            .active {
+                background-color: #3770fb;
+            }
+        }
+
+        .discription {
+            padding-top: 0.17rem;
+            text-align: center;
+        }
+    }
+
+    .term-tab {
+        padding: 0.17rem 0.16rem;
+
+        .van-tabs--card {
+            .van-tabs__wrap {
+                height: 0.34rem;
+
+                .van-tabs__nav--card {
+                    border-color: #3770fb;
+                    height: 0.34rem;
+                    margin: 0px;
+
+                    .van-tab {
+                        color: #3770fb;
+                        border-color: #3770fb;
+                        line-height: 0.34rem;
+                    }
+
+                    .van-tab--active {
+                        color: white;
+                        background-color: #3770fb;
+                    }
+                }
+            }
+        }
+    }
+
+    .student-score {
+        padding: 0.03rem 0.16rem;
+
+        .discription {
+            padding: 0.03rem 0;
+        }
+
+        .subject {
+            margin-top: 0.14rem;
+        }
+
+        .score {
+            button {
+                padding: 0 0.085rem;
+                height: 24px;
+                line-height: 24px;
+                background-color: #53acf8;
+                border-color: #53acf8;
+            }
+        }
+
+        .subject,
+        .unit,
+        .score {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.07rem 0;
+            border-bottom: 1px solid #eeeeee;
+
+            &>span:first-child {
+                color: #333333;
+                font-weight: bold;
+            }
+        }
+
+        .input-time {
+            margin-top: 0.14rem;
+        }
+
+        .notify {
+            color: #84c225;
+        }
+
+        .input-time,
+        .edit-time,
+        .notify {
+            font-size: 0.12rem;
+            padding: 0.05rem 0;
+        }
+
+        .input-time,
+        .edit-time {
+            color: #999999;
+        }
+    }
+
+    .modify-score {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 0.4rem;
+      line-height: 0.4rem;
+        background-color: #3770fb;
+        border-color: #3770fb;
+    }
+
+    // 修改分数
+    #resultsPop-up {
+        width: 100%;
+        font-size: 0.14rem;
+
+        .content {
+            .top-nav {
+                height: 0.46rem;
+                line-height: 0.45rem;
+                background-color: #3770FB;
+                padding: 0 0.16rem;
+                font-size: 0.16rem;
+                color: #FFF;
+
+                .van-icon {
+                    font-size: 0.18rem;
+                    top: 0.03rem;
+                }
+            }
+
+            .header {
+                padding: 0 0.16rem;
+                height: 0.46rem;
+                line-height: 0.46rem;
+
+                // border-bottom: 1px solid #eee;
+                .bod-s {
+                    border-bottom: 1px solid #eee;
+                    height: 0.46rem;
+
+                    .xiaodian {
+                        .van-switch {
+                            margin-top: 0.13rem;
+                        }
+
+                        span {
+                            margin-left: 0.08rem;
+
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+
+            .middle {
+                padding: 0 0.16rem;
+
+                .p_flex {
+                    margin-top: 0.16rem;
+                    display: flex;
+                    justify-content: space-between;
+                    color: #333333;
+                    padding-left: 0.08rem;
+                    border-left: 0.02rem solid #3770fb;
+                    line-height: 0.2rem;
+                    height: 0.2rem;
+                }
+
+                ul {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    padding-bottom: 0.18rem;
+
+                    li {
+                        width: 0.5rem;
+                        height: 0.26rem;
+                        font-size: 0.14rem;
+                        background-color: #fff;
+                        border: 0.01rem solid #666666;
+                        color: #666;
+                        text-align: center;
+                        margin-top: 0.09rem;
+                        // margin-right: 0.08rem;
+                        line-height: 0.26rem;
+                        border-radius: 0.02rem;
+                    }
+                }
+
+            }
+
+            .huis {
+                height: 0.1rem;
+                background-color: #F3F7F8;
+                width: 100%;
+            }
+
+            .ftooer {
+                padding: 0 0.16rem;
+
+                .p_flex {
+                    margin-top: 0.16rem;
+                    display: flex;
+                    justify-content: space-between;
+                    color: #333333;
+                    padding-left: 0.08rem;
+                    border-left: 0.02rem solid #3770fb;
+                    line-height: 0.2rem;
+                    height: 0.2rem;
+                }
+
+                ul {
+                    display: flex;
+                    flex-flow: row wrap;
+                    padding-bottom: 0.18rem;
+                    margin-top: 0.08rem;
+                    justify-content: space-between;
+
+                    li {
+                        width: 0.5rem;
+                        height: 0.26rem;
+                        font-size: 0.14rem;
+                        background-color: #fff;
+                        border: 0.01rem solid #999;
+                        color: #999;
+                        text-align: center;
+                        margin-top: 0.09rem;
+                        // margin-right: 0.08rem;
+                        line-height: 0.26rem;
+                        border-radius: 0.02rem;
+                    }
+
+                }
+
+                .van-row {
+                    height: 0.34rem;
+                    margin-top: 0.11rem;
+
+                    .one_col {
+                        line-height: 0.34rem;
+                        height: 0.34rem;
+                        text-align: center;
+                        border: 0.01rem solid #3770fb;
+                        border-radius: 0.03rem 0 0 0.03rem;
+
+                    }
+
+                    .two_col {
+                        border: 0.01rem solid #3770fb;
+                         // border-left: 0;
+                        // border-right: 0;
+                        border-radius: 0 0.03rem 0.03rem 0;
+                        line-height: 0.34rem;
+                        height: 0.34rem;
+                        text-align: center;
+                    }
+
+                    // .thre_col {
+                    //     border-radius: 0 0.03rem 0.03rem 0;
+                    //     border: 0.01rem solid #3770fb;
+                    //     line-height: 0.34rem;
+                    //     height: 0.34rem;
+                    //     text-align: center;
+                    // }
+
+                }
+
+            }
+        }
+    }
+}
+
+// 单元管理与新增
+#unit-management {
+    font-size: 0.14rem;
+
+    .anniu {
+        padding: 0.65rem 0.2rem 0.6rem 0.2rem;
+
+        .xiu_gai {
+            margin-bottom: 0.2rem;
+            text-align: center;
+            display: block;
+        }
+
+        .danyuan_ul {
+            li {
+                height: 0.4rem;
+                width: 100%;
+                border: 0.01rem solid #2c3e50;
+                text-align: center;
+                line-height: 0.4rem;
+                font-size: 0.16rem;
+                margin-bottom: 0.2rem;
+                border-radius: 0.04rem
+            }
+        }
+    }
+
+    .bott_yi {
+        .van-button--large {
+            height: 0.4rem;
+            line-height: 0.4rem;
+            background-color: #3770fb;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+        }
+    }
+
+    .delBtn {
+        position: absolute;
+        top: 0.205rem;
+        right: 0.2rem;
+    }
+
+    .unitInput {
+        padding: 0.2rem;
+
+        .van-field {
+            border-bottom: 0.005rem solid #ccc;
+        }
+    }
+}

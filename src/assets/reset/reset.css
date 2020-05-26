@@ -1,0 +1,17 @@
+@charset "utf-8";
+/**
+ @Name：reset.css PC端重置样式
+ @Author：
+ @Email:
+ @Date：
+ **/
+
+/* Reset browser default styles  */
+html {  height: 100%; overflow-y: scroll;   -webkit-text-size-adjust: 100%;  -ms-text-size-adjust: 100%;box-sizing: border-box}
+body{ /*font-size:62.5%;*/ background-color: #fff; color: #404040;}
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset{ margin:0; }
+ul,ol,fieldset,legend{ padding: 0;}
+a{ background-color: transparent;  -webkit-text-decoration-skip: objects; cursor: pointer; color:inherit; text-decoration:none;}
+a:hover,a:focus{
+    text-decoration: none;
+}
